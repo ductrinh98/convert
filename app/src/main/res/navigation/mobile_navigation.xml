@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.projectcalculator.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <argument
+            android:name="history"
+            android:defaultValue="-_-"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_doicoso"
+        android:name="com.example.projectcalculator.ui.doicoso.DoiCoSoFragment"
+        android:label="@string/menu_doicoso"
+        tools:layout="@layout/fragment_doicoso" />
+
+    <fragment
+        android:id="@+id/nav_doidonvi"
+        android:name="com.example.projectcalculator.ui.doidonvi.DoiDonViFragment"
+        android:label="@string/menu_doidonvi"
+        tools:layout="@layout/fragment_doidonvi" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.example.projectcalculator.ui.tools.ToolsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.projectcalculator.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.projectcalculator.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+</navigation>
